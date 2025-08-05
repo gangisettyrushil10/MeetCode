@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #0b063c;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+header.hero {
+  background: linear-gradient(180deg, #1e1e1e 0%, #0b063c 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f3f3f3;
+  letter-spacing: 2px;
+}
+
+.cta-btn, .main-btn {
+  background: #eacd0e;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover, .main-btn:hover {
+  background: #eacd0e;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #eacd0e;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0b063c;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #101010;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feature {
+    width: 30%;
+  }
+}
